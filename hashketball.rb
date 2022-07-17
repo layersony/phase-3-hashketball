@@ -127,3 +127,8 @@ def game_hash
 end
 
 # Write code here
+def all_players
+  game_hash[:home][:players] + game_hash[:away][:players]
+end
+
+puts all_players
